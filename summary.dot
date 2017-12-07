@@ -1,0 +1,28 @@
+digraph "summary" {
+  "observer.alpha-1.0-SNAPSHOT.jar"                  -> "java.base (java.base)";
+  "observer.alpha-1.0-SNAPSHOT.jar"                  -> "observer-1.0-SNAPSHOT.jar";
+  "observer-1.0-SNAPSHOT.jar"                        -> "java.base (java.base)";
+  "persistence-1.0-SNAPSHOT.jar"                     -> "java.base (java.base)";
+  "persistence-1.0-SNAPSHOT.jar"                     -> "statistics-1.0-SNAPSHOT.jar";
+  "observer.beta-1.0-SNAPSHOT.jar"                   -> "java.base (java.base)";
+  "observer.beta-1.0-SNAPSHOT.jar"                   -> "observer-1.0-SNAPSHOT.jar";
+  "rest-1.0-SNAPSHOT.jar"                            -> "jackson-core-2.8.9.jar";
+  "rest-1.0-SNAPSHOT.jar"                            -> "jackson-databind-2.8.9.jar";
+  "rest-1.0-SNAPSHOT.jar"                            -> "java.base (java.base)";
+  "rest-1.0-SNAPSHOT.jar"                            -> "java.xml.bind (java.xml.bind)";
+  "rest-1.0-SNAPSHOT.jar"                            -> "spark-core-2.6.0.jar";
+  "rest-1.0-SNAPSHOT.jar"                            -> "statistics-1.0-SNAPSHOT.jar";
+  "rest-1.0-SNAPSHOT.jar"                            -> "utils-1.0-SNAPSHOT.jar";
+  "rest-1.0-SNAPSHOT.jar"                            -> "見つかりません";
+  "statistics-1.0-SNAPSHOT.jar"                      -> "java.base (java.base)";
+  "statistics-1.0-SNAPSHOT.jar"                      -> "observer-1.0-SNAPSHOT.jar";
+  "utils-1.0-SNAPSHOT.jar"                           -> "java.base (java.base)";
+  "main-1.0-SNAPSHOT.jar"                            -> "java.base (java.base)";
+  "main-1.0-SNAPSHOT.jar"                            -> "observer-1.0-SNAPSHOT.jar";
+  "main-1.0-SNAPSHOT.jar"                            -> "observer.alpha-1.0-SNAPSHOT.jar";
+  "main-1.0-SNAPSHOT.jar"                            -> "observer.beta-1.0-SNAPSHOT.jar";
+  "main-1.0-SNAPSHOT.jar"                            -> "persistence-1.0-SNAPSHOT.jar";
+  "main-1.0-SNAPSHOT.jar"                            -> "rest-1.0-SNAPSHOT.jar";
+  "main-1.0-SNAPSHOT.jar"                            -> "statistics-1.0-SNAPSHOT.jar";
+  "main-1.0-SNAPSHOT.jar"                            -> "utils-1.0-SNAPSHOT.jar";
+}
