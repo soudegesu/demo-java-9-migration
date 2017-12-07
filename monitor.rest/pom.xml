@@ -40,4 +40,28 @@
 		</dependency>
 	</dependencies>
 
+	<profiles>
+		<profile>
+			<id>jdk-9</id>
+			<activation>
+				<jdk>9</jdk>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<artifactId>maven-compiler-plugin</artifactId>
+						<version>3.6.1</version>
+						<configuration>
+							<compilerArgs>
+								<arg>--add-modules</arg><arg>java.xml.bind</arg>
+								<arg>--add-modules</arg><arg>java.xml.ws.annotation</arg>
+								<arg>--patch-module</arg><arg>java.xml.ws.annotation=${settings.localRepository}/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar</arg>
+							</compilerArgs>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+
 </project>
